@@ -133,13 +133,13 @@ export default function Slider3D() {
       onWheel={handleWheel}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center [perspective:1200px]"
+      className="relative w-full h-screen bg-mauve-900/50 overflow-hidden flex flex-col items-center justify-center perspective-distant"
     >
       {/* Main 3D Context - No transforms applied here anymore */}
-      <div className="relative w-full h-full flex items-center justify-center [transform-style:preserve-3d]">
+      <div className="relative w-full h-full flex items-center justify-center transform-3d">
         
         {/* Orbit Ring - Tilts and rotates in 3D space */}
-        <div ref={orbitRef} className="absolute flex items-center justify-center [transform-style:preserve-3d]">
+        <div ref={orbitRef} className="absolute flex items-center justify-center transform-3d">
           {images.map((src, i) => (
             <div 
               key={i}

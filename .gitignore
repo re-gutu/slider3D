@@ -19,33 +19,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Environment & Local secrets
-.env
-.env*.local
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Operating System files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
 # IDE & Editor files
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
-
-# Testing & Coverage
-coverage/
-.nyc_output/
 
 # TypeScript build cache
 *.tsbuildinfo
